@@ -46,10 +46,10 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-        		<groupId>org.eclipse.jkube</groupId>
-        		<artifactId>kubernetes-maven-plugin</artifactId>
-        		<version>1.2.0</version>
-      		</plugin>
+				<groupId>org.eclipse.jkube</groupId>
+				<artifactId>kubernetes-maven-plugin</artifactId>
+				<version>1.2.0</version>
+			</plugin>
 		</plugins>
 	</build>
 
