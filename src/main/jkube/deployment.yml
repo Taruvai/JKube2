@@ -5,7 +5,7 @@ spec:
       volumes:
         - name: config
           configMap:
-            name: ${project.artifactId}
+            name: ${config-map.name}
             items:
               - key: application.properties
                 path: application.properties

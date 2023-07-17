@@ -1,5 +1,5 @@
 metadata:
-  name: ${project.artifactId}
+  name: ${config-map.name}
 data:
   application.properties: |
     # spring application properties file
