@@ -15,6 +15,7 @@
 	<description>Demo project for JKube resource fragment</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<config-map.name>jkube-fragment-cm</config-map.name>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,7 +49,20 @@
 			<plugin>
 				<groupId>org.eclipse.jkube</groupId>
 				<artifactId>kubernetes-maven-plugin</artifactId>
-				<version>1.2.0</version>
+				<version>1.13.1</version>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>build</goal>
+							<!-- Should enable to push to a shared registry where image can be downloaded -->
+							<!--<goal>push</goal>-->
+							<goal>resource</goal>
+							<goal>apply</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
